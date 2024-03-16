@@ -20,18 +20,21 @@ function Pokemon({ pokemon, language}) {
   
 
   return (
- <div className="pokemon-card">
+<div className="pokemon-card">
   <img src={image} className="pokemon-image"/>
   <div className="pokemon-info">
     <p>[{id}] <h3>{pokemonName}</h3></p>
 
-    <div className="type-circle">
-      <h4>{type.join(' | ')}</h4>
+    <div className="type-container">
+      {type.map((typeName, index) => (
+        <div key={index} className="type-circle">
+          <h4>{typeName}</h4>
+        </div>
+      ))}
     </div>
     <p>HP: {base.HP} Speed: {base.Speed}</p>
     <p>Atk: {base.Attack} Sp. Atk: {base['Sp. Attack']} </p>
     <p>Def: {base.Defense} Sp. Def: {base['Sp. Defense']}</p>
-
   </div>
 </div>
 

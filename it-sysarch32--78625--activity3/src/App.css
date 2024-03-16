@@ -76,3 +76,22 @@ h1{
   margin-left: 500px;
 }
 
+.type-container {
+  display: flex;
+  align-items: center; /* Center the items vertically */
+  justify-content: center;
+}
+
+.type-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px; /* Adjust as needed */
+  height: 30px; /* Adjust as needed */
+  border: 2px solid #333;
+  border-radius: 15%; /* Changed to 50% for a full circle */
+  margin-right: 10px; /* Adjust spacing between circles */
+  text-align: center; /* Center the text horizontally */
+}
+
+
