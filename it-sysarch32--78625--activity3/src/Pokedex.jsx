@@ -11,10 +11,10 @@ function Pokedex({ pokemons }) {
   return (
     <div className='buttonGroup'>    
       <div className="language-buttons">
-        <button onClick={() => handleLanguageChange('english')}></button> 
-        <button onClick={() => handleLanguageChange('japanese')}></button>
-        <button onClick={() => handleLanguageChange('chinese')}></button>
-        <button onClick={() => handleLanguageChange('french')}></button>
+        <button onClick={() => handleLanguageChange('english')}>English</button> 
+        <button onClick={() => handleLanguageChange('japanese')}>Japanese</button>
+        <button onClick={() => handleLanguageChange('chinese')}>Chinese</button>
+        <button onClick={() => handleLanguageChange('french')}>French</button>
       </div>
       {pokemons.map((pokemon) => (
         <Pokemon key={pokemon.id} pokemon={pokemon} language={language} />
